@@ -28,6 +28,7 @@ class App extends React.Component {
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
+        <h1>Monsters Rolodex</h1>
         <SearchBox 
         placeHolder = "search monsteres"
         handleChange = {this.handleChange}
